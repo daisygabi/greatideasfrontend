@@ -1,3 +1,12 @@
+# GreatIdeas Frontend
+This is a React application that uses the REST Api from the greatIdeasbackend project AND a demo provided API.
+The application was implemented in aprox 3h and the part of the dashboard that contains the grid is a much more time consuming part, which cannot be done in such short time.
+On top right there are two buttons, one that fetches data from my backend API and the other that calles a mocked Api. My backend api has pagination because the endpoint was designed as such. The layout is responsive on mobile as well.
+
+In order to 'adapt to content' at this point, I have added a default image in case there is none. I have some demo data on backend that does not provide image url.
+
+I have used the same mapping on my backend as the one from the mocked api.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
