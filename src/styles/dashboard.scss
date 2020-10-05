@@ -1,0 +1,29 @@
+@import "variables";
+
+.post-block {
+  display: inline-flex;
+  width: $width-post-block;
+  border-radius: 0.7rem;
+  background: #F5F6F7;
+
+  &--title {
+    text-align: start;
+    font-weight: bold;
+  }
+
+  &--img {
+    border-radius: 0.7rem;
+  }
+}
+
+.small-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.api-button {
+
+  :hover {
+    background: $light-text-color;
+  }
+}

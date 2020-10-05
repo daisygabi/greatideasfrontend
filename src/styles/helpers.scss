@@ -1,0 +1,27 @@
+@import "variables";
+
+.main-container {
+  @media (min-width: $md) {
+    padding-left: $md-main-containers-padding;
+    padding-right: $md-main-containers-padding;
+  }
+
+  @media (max-width: $sm) {
+    padding: $main-containers-padding;
+  }
+}
+
+@each $size-name, $size in $dimensions {
+  .hidden-#{$size-name} {
+    @media (max-width: $size) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}
+
+@each $font-size-name, $font-size in $font-sizes {
+  .font-size-#{$font-size-name} {
+    font-size: $font-size;
+  }
+}

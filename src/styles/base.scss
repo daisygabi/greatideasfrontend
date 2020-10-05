@@ -1,0 +1,32 @@
+@import "variables";
+
+body {
+  font-family: $font-family-base;
+  background-color: $background-color;
+  color: $text-color;
+  min-height: 100vh;
+}
+
+.menu-items {
+  li {
+    display: inline-block;
+    *display: inline; /*IE7*/
+    margin-right: $padding-right-post-block;
+    font-weight: bold;
+    background: yellow;
+  }
+
+  li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &--active {
+    text-decoration: underline;
+    color: $dashboard-used-color-blue;
+  }
+}
+
+.small-text {
+  font-size: small;
+}
